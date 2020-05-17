@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_what_you_may">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/skincare"
+        android:layout_height="wrap_content"/>
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:layout_width="wrap_content"
+        android:text="Skincare"
+        android:textAllCaps="true"
+        app:fontname="bold"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#292447"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

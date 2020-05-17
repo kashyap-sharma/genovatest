@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GenovaTest</string>
+    <string name="genova">G E N O V A</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="shop_bath_ritual">Shop Bath &amp; Ritual at AED/SAR\n500, Retail price AED/SAR 800></string>
+    <string name="shop_now"><u>SHOP NOW</u></string>
+</resources>

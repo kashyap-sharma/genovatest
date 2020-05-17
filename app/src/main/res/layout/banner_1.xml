@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/banner1color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/textColorbanner"
+        app:fontname="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/sub_heading"
+        android:layout_width="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/textColorbanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner1_2" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontname="bold"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        android:text="@string/shop_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sub_heading"
+        app:layout_constraintTop_toBottomOf="@+id/sub_heading" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

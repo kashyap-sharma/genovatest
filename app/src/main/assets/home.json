@@ -1,0 +1,223 @@
+{
+   "status":"1",
+   "message":"Success",
+   "data":[
+      {
+         "title":"Limited time Offer",
+         "type":"banner",
+         "currency":"AED",
+         "display_priority":"1",
+         "items":[
+            {
+               "name":"Limited time Offer",
+               "sub_heading":"Shop Bath & Ritual at AED/SAR\n500, Retail price AED/SAR 800",
+               "image":"banner1",
+               "product_id":"5"
+            }
+         ]
+      },
+      {
+         "title":"What you may like",
+         "type":"ListHorizSquare",
+         "currency":"AED",
+         "display_priority":"2",
+         "items":[
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            },
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            },
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            },
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            }
+         ]
+      },
+      {
+         "title":"New Offers",
+         "type":"banner1",
+         "currency":"AED",
+         "display_priority":"3",
+         "items":[
+            {
+               "name":"New Offers",
+               "sub_heading":"Lorem ipsum dolor\nsit amet, consectetur",
+               "image":"banner1",
+               "button_text":"Shop now",
+               "product_id":"5"
+            }
+         ]
+      },
+      {
+         "title":"",
+         "type":"GridSquare",
+         "currency":"AED",
+         "display_priority":"4",
+         "items":[
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            },
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            },
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            },
+            {
+               "category_name":"Skincare",
+               "image":"skincare",
+               "category_id":"1"
+            }
+         ]
+      },
+      {
+         "title":"SEASONAL OFFERS",
+         "type":"ListHorizBig",
+         "currency":"AED",
+         "display_priority":"5",
+         "items":[
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            }
+         ]
+      },
+      {
+         "title":"ITEMS ON SALE",
+         "type":"ListCarous",
+         "currency":"AED",
+         "display_priority":"6",
+         "items":[
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            }
+         ]
+      },
+      {
+         "title":"BEST SELLERS",
+         "type":"List2itemgrid",
+         "currency":"AED",
+         "display_priority":"7",
+         "items":[
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            }
+         ]
+      }
+   ]
+}

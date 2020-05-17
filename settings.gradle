@@ -1,0 +1,2 @@
+rootProject.name='GenovaTest'
+include ':app'
