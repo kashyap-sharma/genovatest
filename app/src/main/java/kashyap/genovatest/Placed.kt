@@ -13,7 +13,7 @@ class Placed : AppCompatActivity() {
         setContentView(R.layout.activity_placed)
         mContext = this
         findViewById<View>(R.id.backhome).setOnClickListener {
-            Static_Catelog.setStringProperty(mContext, "added", "no")
+            Static_Catelog.setStringProperty(mContext as Placed, "added", "no")
             startActivity(Intent(mContext, HomePage::class.java))
             finish()
         }

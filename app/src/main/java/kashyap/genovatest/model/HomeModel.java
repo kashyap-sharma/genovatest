@@ -1,5 +1,7 @@
 package kashyap.genovatest.model;
 
+
+
 public class HomeModel {
     public String name;
     public String sub_heading;
