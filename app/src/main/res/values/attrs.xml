@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <declare-styleable name="textfontstyle">
-    <attr name="fontname" format="string" localization="suggested" />
+        <attr name="fontname" format="string" localization="suggested" />
     </declare-styleable>
+
+    <declare-styleable name="ShoppingView">
+        <attr name="sv_bg_color" format="color" />
+        <attr name="sv_text" format="string" />
+        <attr name="sv_text_size" format="dimension" />
+        <attr name="sv_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ExactRatingBar">
+        <attr name="starValue" format="float" />
+        <attr name="starSize" format="integer" />
+        <attr name="starCount" format="integer" />
+        <attr name="isIndicator" format="boolean" />
+        <attr name="starFillColor" format="color" />
+        <attr name="starBorderWidth" format="integer" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
 </resources>

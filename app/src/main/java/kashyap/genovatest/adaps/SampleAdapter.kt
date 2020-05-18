@@ -1,10 +1,15 @@
 package kashyap.genovatest.adaps
 
+import android.content.Context
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kashyap.genovatest.R
+import kashyap.genovatest.Static_Catelog
+import kashyap.genovatest.cusfo.ProximaNovaText
 import kashyap.genovatest.cusfo.carous.CarouselAdapter
 import kashyap.genovatest.model.EmptySampleModel
 import kashyap.genovatest.model.SamModel
@@ -12,7 +17,7 @@ import kashyap.genovatest.model.SampleModel
 import kotlinx.android.synthetic.main.adapter_carouse.view.*
 import kotlinx.android.synthetic.main.item_empty_carousel.view.*
 
-class SampleAdapter : CarouselAdapter() {
+class SampleAdapter(private val mContext: Context ): CarouselAdapter() {
 
     private val EMPTY_ITEM = 0
     private val NORMAL_ITEM = 1
@@ -49,7 +54,7 @@ class SampleAdapter : CarouselAdapter() {
             is MyViewHolder -> {
                 vh = holder
                 val model = getItems()[position] as SamModel
-               // (vh as MyViewHolder).title.text = model.getId().toString()
+                // (vh as MyViewHolder).title.text = model.getId().toString()
             }
             else -> {
                 vh = holder
@@ -61,11 +66,14 @@ class SampleAdapter : CarouselAdapter() {
 
     inner class MyViewHolder(itemView: View) : CarouselViewHolder(itemView) {
 
-        var title: TextView = itemView.type
+        var title:  FloatingActionButton = itemView.texts
+        var tvOldPrice:  ProximaNovaText = itemView.tvOldPrice
 
-//        init {
-//            title.setOnClickListener { onClick?.click(getItems()[adapterPosition] as SamModel) }
-//        }
+        init {
+
+            tvOldPrice.paintFlags = tvOldPrice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+            title.setOnClickListener { Static_Catelog.setStringProperty(mContext,"added","yes") }
+        }
 
     }
 

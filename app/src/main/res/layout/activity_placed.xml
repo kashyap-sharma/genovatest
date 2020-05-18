@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Placed">
+
+    <ru.egslava.blurredview.BlurredImageView
+        android:id="@+id/imageView7"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:radius="0.9"
+        app:keepOriginal="true"
+        app:downSampling="6"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/backy"
+      />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#9054DAD5"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".42"
+        app:lottie_autoPlay="true"
+
+        app:lottie_fileName="placed.json"
+        app:lottie_loop="true" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_no_25081989"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:fontname="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lotti"
+        app:layout_constraintEnd_toEndOf="@+id/lotti"
+        app:layout_constraintStart_toStartOf="@+id/lotti"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congratulations"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:fontname="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lotti"
+        app:layout_constraintStart_toStartOf="@+id/lotti"
+        app:layout_constraintTop_toBottomOf="@+id/lotti"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/your_order_has_been_processed_nyou_will_receive_a_confirmation_email"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/backhome"
+        app:layout_constraintEnd_toEndOf="@+id/proximaNovaText13"
+        app:layout_constraintStart_toStartOf="@+id/proximaNovaText13"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaButton
+        android:id="@+id/backhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/backtohome"
+        android:padding="5dp"
+        android:text="@string/back_to_home"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:fontname="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

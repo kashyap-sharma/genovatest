@@ -1,0 +1,37 @@
+{
+   "status":"1",
+   "message":"Success",
+   "data":[
+      {
+         "title":"Cart Item",
+         "currency":"AED",
+         "total":"600",
+         "VAT":"0",
+         "display_priority":"5",
+         "items":[
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "weight":"100 ML",
+               "old_price":"400",
+               "quantity":"2",
+               "product_id":"1"
+            },
+            {
+               "name":"Sandal Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "weight":"200 ML",
+               "off":"50",
+               "old_price":"400",
+               "quantity":"1",
+               "product_id":"2"
+            }
+         ]
+      }
+   ]
+}

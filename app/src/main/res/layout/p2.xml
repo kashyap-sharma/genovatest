@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="2"
+    android:orientation="horizontal">
+<kashyap.genovatest.cusfo.ProximaNovaButton
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_margin="5dp"
+    app:fontname="bold"
+    android:textColor="#131313"
+    android:textSize="13sp"
+    android:text="@string/add_review"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"/>
+    <kashyap.genovatest.cusfo.ProximaNovaButton
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:textColor="#131313"
+        app:fontname="bold"
+        android:textSize="13sp"
+        android:layout_margin="5dp"
+        android:text="@string/see_all_review_68"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

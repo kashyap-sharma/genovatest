@@ -3,6 +3,7 @@ package kashyap.genovatest.adaps;
 import android.annotation.SuppressLint;
 import android.content.Context;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentManager;
 
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -22,6 +24,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
+import kashyap.genovatest.DetailsP;
 import kashyap.genovatest.R;
 import kashyap.genovatest.cusfo.ProximaNovaText;
 import kashyap.genovatest.cusfo.carous.Carousel;
@@ -41,12 +44,16 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter {
         ProximaNovaText title;
         ProximaNovaText subheading;
         AppCompatImageView image;
+        ConstraintLayout con;
 
         BannerViewHolder(View itemView) {
             super(itemView);
             this.title=  itemView.findViewById(R.id.title);
             this.subheading=  itemView.findViewById(R.id.sub_heading);
             this.image=  itemView.findViewById(R.id.image);
+            this.con=  itemView.findViewById(R.id.con);
+
+
         }
     }
 
@@ -188,6 +195,13 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter {
                 case Model.banner:
                     ((BannerViewHolder) holder).title.setText(object.datas.get(0).name);
                     ((BannerViewHolder) holder).subheading.setText(object.datas.get(0).sub_heading);
+                    ((BannerViewHolder) holder).con.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent=new Intent(mContext, DetailsP.class);
+                            mContext.startActivity(intent);
+                        }
+                    });
                     break;
                 case Model.banner1:
                     ((BannerViewHolder1) holder).title.setText(object.datas.get(0).name);
@@ -222,7 +236,7 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter {
                     break;
                 case Model.ListCarous:
 
-                    SampleAdapter sampleAdapter = new SampleAdapter();
+                    SampleAdapter sampleAdapter = new SampleAdapter(mContext);
                     Carousel carousel= new Carousel((AppCompatActivity) mContext, ((CarousalViewHolder) holder).mCarouselView,sampleAdapter);
                     carousel.setOrientation(CarouselView.HORIZONTAL, false,true);
                     carousel.autoScroll(true, 5000, true);

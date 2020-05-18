@@ -7,4 +7,40 @@
     <string name="title_notifications">Notifications</string>
     <string name="shop_bath_ritual">Shop Bath &amp; Ritual at AED/SAR\n500, Retail price AED/SAR 800></string>
     <string name="shop_now"><u>SHOP NOW</u></string>
+    <string name="start_shopping_and_add_more">Start shopping and add more items to the\ncart. Not sure what you\'d like to buy? Try\nour fragrance finder.</string>
+    <string name="got_a_discount_code">Got a discount code?</string>
+    <string name="proceed_to_checkout">proceed to checkout</string>
+    <string name="review_dummy">A great product that associates with luxury, sophisitcation and comfort. I gave it a good review overall for it.</string>
+    <string name="add_review">add review</string>
+    <string name="see_all_review_68">see all review(68)</string>
+    <string name="title_activity_checkout">CheckoutA</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title">Title</string>
+    <string name="full_name">Full Name</string>
+    <string name="address">Address</string>
+    <string name="p_o_box">P.O. Box</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+
+    <string name="code">Code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="shipping_address">SHIPPING ADDRESS</string>
+    <string name="verify">Verify</string>
+    <string name="place_order">Place order</string>
+    <string-array name="steps">
+        <item>LOGIN</item>
+        <item>SHIPPING</item>
+        <item>PAYMENT</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="order_no_25081989">Order no: 25081989</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_order_has_been_processed_nyou_will_receive_a_confirmation_email">Your order has been processed.\nYou will receive a confirmation email.</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="devname">Kashyap Sharma</string>
+    <string name="devmail">kashyapsharma@yahoo.com</string>
 </resources>

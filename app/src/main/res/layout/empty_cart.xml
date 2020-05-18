@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/appCompatImageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+
+        app:lottie_fileName="emptycart.json"
+        app:lottie_loop="true" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Your cart is empty"
+        android:textColor="@color/textColor"
+        android:textSize="28sp"
+        app:fontname="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView4"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/textColor"
+        app:fontname="bold"
+        android:layout_marginEnd="42dp"
+        android:paddingEnd="42dp"
+        android:text="@string/start_shopping_and_add_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/proximaNovaText2"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Products you may like"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        app:fontname="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/proximaNovaText3"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText3"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="see more"
+        android:textColor="#B6AAB9"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/proximaNovaText14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/proximaNovaText14"
+        app:layout_constraintTop_toTopOf="@+id/proximaNovaText14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/recyclerView"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText14"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

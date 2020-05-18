@@ -8,4 +8,9 @@
     <color name="tabSelected">#323643</color>
     <color name="tabUnselected">#DFDFDF</color>
     <color name="banner1color">#F5F5F5</color>
+    <color name="sv_blue">#F0F1F6</color>
+    <color name="hintTextColor">#7A7A7A</color>
+
+    <color name="black_overlay">#66000000</color>
+
 </resources>

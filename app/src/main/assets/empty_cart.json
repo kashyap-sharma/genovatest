@@ -1,0 +1,49 @@
+{
+   "status":"1",
+   "message":"Success",
+   "data":[
+      {
+         "title":"Products you may like",
+         "currency":"AED",
+         "display_priority":"5",
+         "items":[
+            {
+               "name":"Sandal Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"150",
+               "off":"50",
+               "old_price":"300",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"200",
+               "off":"50",
+               "old_price":"400",
+               "product_id":"1"
+            },
+            {
+               "name":"Woody Intense Cool",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"175",
+               "off":"50",
+               "old_price":"350",
+               "product_id":"1"
+            },
+            {
+               "name":"Spray Intense",
+               "brand":"SPRAY",
+               "image":"skincare",
+               "price":"280",
+               "off":"50",
+               "old_price":"560",
+               "product_id":"1"
+            }
+         ]
+      }
+   ]
+}

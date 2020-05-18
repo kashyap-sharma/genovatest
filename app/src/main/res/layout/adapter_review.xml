@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/lucifer"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Kashyap Sharma"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        app:fontname="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="17 May"
+        android:textColor="#454F63"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/proximaNovaText34"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText34"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="13sp"
+        android:textColor="@color/textColor"
+        android:text="@string/review_dummy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <kashyap.genovatest.cusfo.ratingbar.ExactRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:isIndicator="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/proximaNovaText36"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText36"
+        app:starCount="5"
+
+        app:starFillColor="#92CB5E"
+        app:starSize="40"
+        app:starValue="4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/banner1color"
     android:layout_width="match_parent"
+    android:id="@+id/con"
     android:layout_height="wrap_content">
 
     <kashyap.genovatest.cusfo.ProximaNovaText

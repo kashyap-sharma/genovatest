@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_shopping_bag"
-
+        android:id="@+id/texts"
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
@@ -81,7 +81,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <kashyap.genovatest.cusfo.ProximaNovaText
-                android:id="@+id/proximaNovaText7"
+                android:id="@+id/tvOff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -132,6 +132,7 @@
                     android:layout_height="wrap_content"
                     android:text="350 SAR"
                     android:textColor="@color/textColor"
+                    android:id="@+id/price"
                     android:textSize="22sp"
                     app:fontname="bold" />
 
@@ -139,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="450 SAR"
-
+                    android:id="@+id/tvOldPrice"
                     android:textColor="#C5C5C5"
                     android:textSize="15sp"
                     app:fontname="bold" />

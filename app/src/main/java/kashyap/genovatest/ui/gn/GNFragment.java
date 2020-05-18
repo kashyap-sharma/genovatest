@@ -1,5 +1,6 @@
 package kashyap.genovatest.ui.gn;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
@@ -30,6 +31,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
+import kashyap.genovatest.DetailsP;
 import kashyap.genovatest.R;
 import kashyap.genovatest.adaps.MultiViewTypeAdapter;
 import kashyap.genovatest.cusfo.Constants;
@@ -55,6 +57,7 @@ public class GNFragment extends Fragment {
         recyclerView = root.findViewById(R.id.recyclerView);
         linearLayoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
+
 
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
@@ -104,7 +107,10 @@ public class GNFragment extends Fragment {
                         JSONArray jsonArray1 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         ArrayList<HomeModel> list_items = new ArrayList<>();
                         for (int l = 0; l < jsonArray1.length(); l++) {
-                            list_items.add(new HomeModel(jsonArray1.getJSONObject(l).getString("name"), jsonArray1.getJSONObject(l).getString("sub_heading"), jsonArray1.getJSONObject(l).getString("image"), jsonArray1.getJSONObject(l).getString("product_id")));
+                            list_items.add(new HomeModel(jsonArray1.getJSONObject(l).getString("name"),
+                                    jsonArray1.getJSONObject(l).getString("sub_heading"),
+                                    jsonArray1.getJSONObject(l).getString("image"),
+                                    jsonArray1.getJSONObject(l).getString("product_id")));
                         }
                         list.add(new Model(Model.banner, myJsonArray.getJSONObject(j).getString("title"), list_items ));
                     }
@@ -112,7 +118,9 @@ public class GNFragment extends Fragment {
                         ArrayList<HomeModel> grid_items = new ArrayList<>();
                         JSONArray jsonArray2 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         for (int m = 0; m < jsonArray2.length(); m++) {
-                            grid_items.add(new HomeModel(jsonArray2.getJSONObject(m).getString("category_name"), jsonArray2.getJSONObject(m).getString("image"), jsonArray2.getJSONObject(m).getString("category_id")));
+                            grid_items.add(new HomeModel(jsonArray2.getJSONObject(m).getString("image"),
+                                    jsonArray2.getJSONObject(m).getString("category_name"),
+                                    jsonArray2.getJSONObject(m).getString("category_id")));
                         }
                         list.add(new Model(Model.ListHorizSquare, myJsonArray.getJSONObject(j).getString("title"), grid_items));
                     }
@@ -120,7 +128,12 @@ public class GNFragment extends Fragment {
                         ArrayList<HomeModel> banner_items = new ArrayList<>();
                         JSONArray jsonArray3 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         for (int n = 0; n < jsonArray3.length(); n++) {
-                            banner_items.add(new HomeModel(jsonArray3.getJSONObject(n).getString("name"), jsonArray3.getJSONObject(n).getString("sub_heading"), jsonArray3.getJSONObject(n).getString("image"), jsonArray3.getJSONObject(n).getString("button_text"), jsonArray3.getJSONObject(n).getString("product_id")));
+
+                            banner_items.add(new HomeModel(jsonArray3.getJSONObject(n).getString("name"),
+                                    jsonArray3.getJSONObject(n).getString("sub_heading"),
+                                    jsonArray3.getJSONObject(n).getString("image"),
+                                    jsonArray3.getJSONObject(n).getString("product_id"),
+                                    jsonArray3.getJSONObject(n).getString("button_text")));
                         }
                         list.add(new Model(Model.banner1, myJsonArray.getJSONObject(j).getString("title"), banner_items));
                     }
@@ -128,7 +141,10 @@ public class GNFragment extends Fragment {
                         ArrayList<HomeModel> squbanner_items = new ArrayList<>();
                         JSONArray jsonArray3 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         for (int n = 0; n < jsonArray3.length(); n++) {
-                            squbanner_items.add(new HomeModel(jsonArray3.getJSONObject(n).getString("category_name"), jsonArray3.getJSONObject(n).getString("image"), jsonArray3.getJSONObject(n).getString("category_id")));
+
+                            squbanner_items.add(new HomeModel(jsonArray3.getJSONObject(n).getString("image"),
+                                    jsonArray3.getJSONObject(n).getString("category_name"),
+                                    jsonArray3.getJSONObject(n).getString("category_id")));
                         }
                         list.add(new Model(Model.GridSquare, myJsonArray.getJSONObject(j).getString("title"), squbanner_items));
                     }
@@ -136,7 +152,13 @@ public class GNFragment extends Fragment {
                         ArrayList<HomeModel> listHorizBig_items = new ArrayList<>();
                         JSONArray jsonArray3 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         for (int q = 0; q < jsonArray3.length(); q++) {
-                            listHorizBig_items.add(new HomeModel(jsonArray3.getJSONObject(q).getString("name"), jsonArray3.getJSONObject(q).getString("brand"), jsonArray3.getJSONObject(q).getString("image"), jsonArray3.getJSONObject(q).getString("price"), jsonArray3.getJSONObject(q).getString("off"), jsonArray3.getJSONObject(q).getString("old_price"), jsonArray3.getJSONObject(q).getString("product_id")));
+                            listHorizBig_items.add(new HomeModel(jsonArray3.getJSONObject(q).getString("name"),
+                                    jsonArray3.getJSONObject(q).getString("image"),
+                                    jsonArray3.getJSONObject(q).getString("product_id"),
+                                    jsonArray3.getJSONObject(q).getString("brand"),
+                                    jsonArray3.getJSONObject(q).getString("price"),
+                                    jsonArray3.getJSONObject(q).getString("off"),
+                                    jsonArray3.getJSONObject(q).getString("old_price")));
                         }
                         list.add(new Model(Model.ListHorizBig, myJsonArray.getJSONObject(j).getString("title"), listHorizBig_items));
                     }
@@ -144,7 +166,13 @@ public class GNFragment extends Fragment {
                         ArrayList<HomeModel> listHorizBig_items = new ArrayList<>();
                         JSONArray jsonArray3 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         for (int q = 0; q < jsonArray3.length(); q++) {
-                            listHorizBig_items.add(new HomeModel(jsonArray3.getJSONObject(q).getString("name"), jsonArray3.getJSONObject(q).getString("brand"), jsonArray3.getJSONObject(q).getString("image"), jsonArray3.getJSONObject(q).getString("price"), jsonArray3.getJSONObject(q).getString("off"), jsonArray3.getJSONObject(q).getString("old_price"), jsonArray3.getJSONObject(q).getString("product_id")));
+                            listHorizBig_items.add(new HomeModel(jsonArray3.getJSONObject(q).getString("name"),
+                                    jsonArray3.getJSONObject(q).getString("image"),
+                                    jsonArray3.getJSONObject(q).getString("product_id"),
+                                    jsonArray3.getJSONObject(q).getString("brand"),
+                                    jsonArray3.getJSONObject(q).getString("price"),
+                                    jsonArray3.getJSONObject(q).getString("off"),
+                                    jsonArray3.getJSONObject(q).getString("old_price")));
                         }
                         list.add(new Model(Model.ListCarous, myJsonArray.getJSONObject(j).getString("title"), listHorizBig_items));
                     }
@@ -152,7 +180,13 @@ public class GNFragment extends Fragment {
                         ArrayList<HomeModel> listHorizBig_items = new ArrayList<>();
                         JSONArray jsonArray3 = myJsonArray.getJSONObject(j).getJSONArray("items");
                         for (int q = 0; q < jsonArray3.length(); q++) {
-                            listHorizBig_items.add(new HomeModel(jsonArray3.getJSONObject(q).getString("name"), jsonArray3.getJSONObject(q).getString("brand"), jsonArray3.getJSONObject(q).getString("image"), jsonArray3.getJSONObject(q).getString("price"), jsonArray3.getJSONObject(q).getString("off"), jsonArray3.getJSONObject(q).getString("old_price"), jsonArray3.getJSONObject(q).getString("product_id")));
+                            listHorizBig_items.add(new HomeModel(jsonArray3.getJSONObject(q).getString("name"),
+                                    jsonArray3.getJSONObject(q).getString("image"),
+                                    jsonArray3.getJSONObject(q).getString("product_id"),
+                                    jsonArray3.getJSONObject(q).getString("brand"),
+                                    jsonArray3.getJSONObject(q).getString("price"),
+                                    jsonArray3.getJSONObject(q).getString("off"),
+                                    jsonArray3.getJSONObject(q).getString("old_price")));
                         }
                         list.add(new Model(Model.List2itemgrid, myJsonArray.getJSONObject(j).getString("title"), listHorizBig_items));
                     }

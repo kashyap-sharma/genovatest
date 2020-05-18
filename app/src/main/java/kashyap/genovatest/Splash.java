@@ -2,6 +2,7 @@ package kashyap.genovatest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
@@ -12,11 +13,13 @@ import android.view.View;
 import kashyap.genovatest.connect.ConnectivityReceiver;
 
 public class Splash extends AppCompatActivity implements ConnectivityReceiver.ConnectivityReceiverListener {
-
+    Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        mContext=this;
+        Static_Catelog.setStringProperty(mContext,"added","no");
         checkConnection();
         init();
     }
@@ -26,6 +29,8 @@ public class Splash extends AppCompatActivity implements ConnectivityReceiver.Co
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+
+                new Intent(Splash.this, HomePage.class).putExtra("go","no");
                 startActivity(new Intent(Splash.this, HomePage.class));
                 finish();
             }

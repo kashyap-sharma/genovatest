@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <kashyap.genovatest.cusfo.ProximaNovaText
+        android:id="@+id/proximaNovaText39"
+        android:layout_width="wrap_content"
+        android:text="@string/shipping_address"
+        android:textSize="20sp"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proximaNovaText39"
+        app:layout_constraintVertical_bias="0.0">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTitle"
+            android:clickable="false"
+            android:longClickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/title"
+            android:drawableEnd="@drawable/ic_downarrow"
+            android:drawablePadding="5dp"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp"
+            android:id="@+id/etFullName"
+            android:inputType="textPersonName"
+            android:hint="@string/full_name" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilFullName"
+        app:layout_constraintVertical_bias="0.0">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddress"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp"
+            android:hint="@string/address" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilPOBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilAddress"
+        app:layout_constraintVertical_bias="0.0">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPOBox"
+            android:inputType="number"
+
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp"
+            android:hint="@string/p_o_box" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilPOBox"
+        app:layout_constraintVertical_bias="0.0">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_downarrow"
+            android:drawablePadding="5dp"
+            android:id="@+id/etCity"
+            android:clickable="false"
+            android:longClickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp"
+            android:hint="@string/city" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilCity"
+        app:layout_constraintVertical_bias="0.0">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/etCountry"
+            android:drawableEnd="@drawable/ic_downarrow"
+            android:drawablePadding="5dp"
+            android:hint="@string/country" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilCountry"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.3">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/ic_downarrow"
+            android:drawablePadding="5dp"
+            android:id="@+id/etCode"
+            android:clickable="false"
+            android:longClickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp"
+            android:hint="@string/code" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaInputLayout
+        android:id="@+id/ilMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ilCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ilCode"
+        app:layout_constraintTop_toTopOf="@+id/ilCode"
+        app:layout_constraintVertical_bias="0.50">
+
+        <kashyap.genovatest.cusfo.ProximaNovaEditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:hint="@string/mobile_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="16sp" />
+    </kashyap.genovatest.cusfo.ProximaNovaInputLayout>
+
+    <kashyap.genovatest.cusfo.ProximaNovaButton
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/textColor"
+        android:text="@string/verify"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilMobile"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <kashyap.genovatest.cusfo.ProximaNovaButton
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#54DAD5"
+        android:text="@string/place_order"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

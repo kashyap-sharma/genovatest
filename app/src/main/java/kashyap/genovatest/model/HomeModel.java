@@ -12,6 +12,8 @@ public class HomeModel {
     public String price;
     public String off;
     public String old_price;
+    public String weight;
+    public String quantity;
 
     public HomeModel(String name, String sub_heading, String image, String product_id) {
         this.name = name;
@@ -42,5 +44,16 @@ public class HomeModel {
         this.price = price;
         this.off = off;
         this.old_price = old_price;
+    }
+    public HomeModel(String name, String image, String product_id, String brand, String price, String off, String old_price, String weight, String quantity) {
+        this.name = name;
+        this.image = image;
+        this.product_id = product_id;
+        this.brand = brand;
+        this.price = price;
+        this.off = off;
+        this.old_price = old_price;
+        this.weight = weight;
+        this.quantity = quantity;
     }
 }
